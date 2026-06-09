@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/xf132mpva1ql/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp local-ai-help.html $DEPLOYPATH
+    - /bin/cp heathbuckley-header.png $DEPLOYPATH
+    - /bin/cp Heath_Buckley_Resume.pdf $DEPLOYPATH
