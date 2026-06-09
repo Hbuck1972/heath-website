@@ -1,27 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Local AI & Tech Help | Heath Buckley</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local AI Help | Heath Buckley</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      background:
+        radial-gradient(circle at top left, rgba(0, 195, 255, 0.14), transparent 34%),
+        linear-gradient(180deg, #020b1f 0%, #071a34 42%, #0b1728 100%);
+      color: #dcecff;
+      min-height: 100vh;
+    }
+
+    .site-header {
+      background: #020b1f;
+      text-align: center;
+      border-bottom: 1px solid rgba(0, 195, 255, 0.4);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+    }
+
+    .header-card {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1983 / 571;
+      object-fit: fill;
+      object-position: center;
+    }
+
+    .main-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: clamp(7px, 0.7vw, 11px);
+      padding:
+        clamp(10px, 0.9vw, 14px)
+        clamp(10px, 0.8vw, 13px)
+        clamp(12px, 1.1vw, 18px);
+      background: #020b1f;
+    }
+
+    .main-nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: clamp(0.78rem, 0.9vw, 0.95rem);
+      padding:
+        clamp(6px, 0.55vw, 8px)
+        clamp(10px, 0.8vw, 14px);
+      border: 1px solid rgba(0, 195, 255, 0.55);
+      border-radius: 999px;
+      background: rgba(0, 80, 160, 0.42);
+      box-shadow: 0 0 12px rgba(0, 195, 255, 0.15);
+    }
+
+    .main-nav a:hover {
+      background: rgba(0, 195, 255, 0.28);
+    }
+
+    .body-wrap {
+      width: min(92vw, 560px);
+      margin: clamp(20px, 2vw, 28px) auto 42px;
+      padding: 0 14px;
+    }
+
+    .body-card {
+      background: rgba(3, 20, 46, 0.82);
+      border: 1px solid rgba(0, 195, 255, 0.35);
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 18px;
+      box-shadow: 0 0 24px rgba(0, 195, 255, 0.08);
+    }
+
+    h1, h2, h3 {
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      color: #5ee7ff;
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      color: #5ee7ff;
+    }
+
+    .mini-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .mini-card {
+      background: rgba(0, 80, 160, 0.28);
+      border: 1px solid rgba(0, 195, 255, 0.28);
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .back-note {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 14px 32px;
+      color: rgba(220, 236, 255, 0.75);
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
 
-  <header class="hero">
-    <img src="heathbuckley-header.png" alt="Heath Buckley Header" class="header-image">
+  <header class="site-header">
+    <img
+      src="heathbuckley-header.png"
+      alt="Heath Buckley - IT Support, Remote Technical Support, Network Administration, AI Automation Projects"
+      class="header-card"
+    />
+
+    <nav class="main-nav">
+      <a href="index.html#about">About Me</a>
+      <a href="index.html#it-support">IT Support</a>
+      <a href="index.html#ai-projects">AI Projects</a>
+      <a href="local-ai-help.html">Local AI Help</a>
+      <a href="index.html#resume">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="local-ai-help.html">Local AI Help</a>
-    <a href="resume.pdf">Resume</a>
-    <a href="mailto:heathbuckley@outlook.com">Contact</a>
-  </nav>
+  <main class="body-wrap">
 
-  <main>
-
-    <section class="card">
+    <section class="body-card">
       <h1>Local AI & Tech Help</h1>
 
       <p>
@@ -35,7 +188,7 @@
       </p>
     </section>
 
-    <section class="card">
+    <section class="body-card">
       <h2>How I Can Help</h2>
 
       <div class="mini-grid">
@@ -89,7 +242,7 @@
       </div>
     </section>
 
-    <section class="card">
+    <section class="body-card">
       <h2>Project Types I’m Looking For</h2>
 
       <p>
@@ -107,7 +260,7 @@
       </ul>
     </section>
 
-    <section class="card">
+    <section class="body-card">
       <h2>Contact Me</h2>
 
       <p>
@@ -118,6 +271,10 @@
       <p>
         Email:
         <a href="mailto:heathbuckley@outlook.com">heathbuckley@outlook.com</a>
+      </p>
+
+      <p class="back-note">
+        <a href="index.html">Return to Home Page</a>
       </p>
     </section>
 
